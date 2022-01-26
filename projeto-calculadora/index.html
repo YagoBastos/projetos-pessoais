@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/70a44dae86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Super Calculadora</title>
+</head>
+<body>
+    <div class="conteudo">
+        <div class="calculeitor">
+            <p class="resultado" id="resultado"> </p>
+            <table>
+                <tr>
+                    <td><button class="btn ac" style="width:106px;" onclick="Clear()">AC</button></td>
+                    <td><button class="btn backspace"><i class="fas fa-backspace" onclick="Backspace()"></i></button></td>
+                    <td><button class="btn operacao"><i class="fas fa-divide" onclick="Insert('/')"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="Insert('7')">7</button></td>
+                    <td><button class="btn" onclick="Insert('8')">8</button></td>
+                    <td><button class="btn" onclick="Insert('9')">9</button></td>
+                    <td><button class="btn operacao" onclick="Insert('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="Insert('4')">4</button></td>
+                    <td><button class="btn" onclick="Insert('5')">5</button></td>
+                    <td><button class="btn" onclick="Insert('6')">6</button></td>
+                    <td><button class="btn operacao" onclick="Insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="Insert('1')">1</button></td>
+                    <td><button class="btn" onclick="Insert('2')">2</button></td>
+                    <td><button class="btn" onclick="Insert('3')">3</button></td>
+                    <td><button class="btn operacao" onclick="Insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="Insert('0')">0</button></td>
+                    <td><button class="btn" onclick="Insert('.')">.</button></td>
+                    <td><button class="btn igual"style="width:106px;" onclick="Confirmar()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
